@@ -1,0 +1,21 @@
+\def\gramster@buildtable#1#2#3{
+  \ifstrequal{#3}{END}{
+    #1 & \textrm{#2} \\
+  }{
+    #1 & \textrm{#2} \\
+    & & & & \gramor & \gramster@buildtable{#3}
+  }
+}
+
+\def\gramster@lblbox#1{
+  \begin{minipage}{0.2\textwidth}
+    \vbox to 0.7\baselineskip{
+      #1
+    }
+  \end{minipage}
+}
+
+\def\gramdef#1#2#3#4#5{
+    & \gramster@lblbox{\textrm{#1}} & & & #2 \gramisa &
+  \gramster@buildtable{#3}{#4}{#5}
+}

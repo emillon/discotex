@@ -1,0 +1,20 @@
+\def\switch#1#2{
+  \ifstrequal{#2}{END}{
+    \errmessage{switch : case "#1" not found}
+  }{
+    \switch@next{#1}{#2}
+  }
+}
+
+\def\switch@next#1#2#3{
+  \ifstrequal{#1}{#2}
+    {#3\switch@last}
+    {
+      \switch{#1}
+    }
+}
+
+\def\switch@last#1{
+  \ifstrequal{#1}{END}{}
+  {\switch@last}
+}
