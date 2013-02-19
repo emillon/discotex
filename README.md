@@ -49,6 +49,8 @@ aligned.
 that defines the size of the left labels. It defaults to `\gramsterlabelwidth`
 which can be globally overridden and is `0.2\textwidth` by default.
 
+There is also a "short" version that typesets in two columns, `\gramdefshort`.
+
 Q & A
 -----
 

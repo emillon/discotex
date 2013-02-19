@@ -28,3 +28,19 @@
     & \gramster@lblbox{#1}{\textrm{#2}} & & & #3 \gramisa &
   \gramster@buildtable{#4}{#5}{#6}
 }
+
+% Short version
+
+\def\gramster@buildtableshort#1#2#3{
+  \ifstrequal{#3}{END}{
+    \gramor & #1 & \textrm{#2} \\
+  }{
+    \gramor & #1 & \textrm{#2} \\
+    \gramster@buildtableshort{#3}
+  }
+}
+
+\newcommand{\gramdefshort}[5]{
+  #2 \gramisa & & \textrm{\large \bf #1} \\
+  \gramster@buildtableshort{#3}{#4}{#5}
+}
