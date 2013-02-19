@@ -51,6 +51,18 @@ which can be globally overridden and is `0.2\textwidth` by default.
 
 There is also a "short" version that typesets in two columns, `\gramdefshort`.
 
+pelagiccod.sty
+--------------
+
+![Pelagic cod][pelagicpic]
+
+Unicode is cool, but pelagic cods are better.
+
+This module defines a few unicode characters so that you can directly input
+unicode (encoded as utf8) in your tex file and it's typeset with the correct
+characters (there are a ton of ways to do that). Pull requests welcome to add
+new characters.
+
 Q & A
 -----
 
@@ -72,3 +84,4 @@ Q & A
 
 [donna]: http://i.imgur.com/RAkXgmT.jpg
 [github]: https://github.com/emillon/discotex
+[pelagicpic]: http://i.imgur.com/Q8UoDk4.gif
