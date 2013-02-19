@@ -45,6 +45,10 @@ will get typeset as
 You can put several `\gramdef{}`s in a `align*` environment : they will get
 aligned.
 
+`\gramster` has an optional parameter to define the length of the box around
+that defines the size of the left labels. It defaults to `\gramsterlabelwidth`
+which can be globally overridden and is `0.2\textwidth` by default.
+
 Q & A
 -----
 

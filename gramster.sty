@@ -13,15 +13,18 @@
   }
 }
 
-\def\gramster@lblbox#1{
-  \begin{minipage}{0.2\textwidth}
+\def\gramster@lblbox#1#2{
+  \begin{minipage}{#1}
     \vbox to 0.7\baselineskip{
-      #1
+      #2
     }
   \end{minipage}
 }
 
-\def\gramdef#1#2#3#4#5{
-    & \gramster@lblbox{\textrm{#1}} & & & #2 \gramisa &
-  \gramster@buildtable{#3}{#4}{#5}
+\newlength{\gramsterlabelwidth}
+\setlength{\gramsterlabelwidth}{0.2\textwidth}
+
+\newcommand{\gramdef}[6][\gramsterlabelwidth]{
+    & \gramster@lblbox{#1}{\textrm{#2}} & & & #3 \gramisa &
+  \gramster@buildtable{#4}{#5}{#6}
 }
