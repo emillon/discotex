@@ -7,7 +7,7 @@
 
 \def\gramster@buildtable#1#2#3{
   \ifstrequal{#3}{END}{
-    #1 & \textrm{#2} \\
+    #1 & \textrm{#2}
   }{
     #1 & \textrm{#2} \\
     & & & & \gramor & \gramster@buildtable{#3}
@@ -34,7 +34,7 @@
 
 \def\gramster@buildtableshort#1#2#3{
   \ifstrequal{#3}{END}{
-    \gramor & #1 & \textrm{#2} \\
+    \gramor & #1 & \textrm{#2}
   }{
     \gramor & #1 & \textrm{#2} \\
     \gramster@buildtableshort{#3}
