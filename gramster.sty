@@ -14,10 +14,12 @@
   }
 }
 
+\def\gramster@lblstyle#1{\larger \bf #1}
+
 \def\gramster@lblbox#1#2{
   \begin{minipage}{#1}
     \vbox to 0.7\baselineskip{
-      #2
+      \gramster@lblstyle{#2}
     }
   \end{minipage}
 }
@@ -47,5 +49,5 @@
 }
 
 \newcommand{\gramheadershort}[2]{
-  #2 \gramisa & & \textrm{\larger \bf #1}
+  #2 \gramisa & & \gramster@lblstyle{\textrm#1}
 }
