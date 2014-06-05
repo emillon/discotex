@@ -1,4 +1,4 @@
-\begin{![Donna Summer][donna])
+\begin{![Donna Summer][donna]}
 
 discotex
 ========
@@ -80,7 +80,7 @@ Q & A
   - Q: Shouldn't you be writing your thesis instead of coding this?
   - A: Probably.
 
-\end{![Donna Summer][donna])
+\end{![Donna Summer][donna]}
 
 [donna]: http://i.imgur.com/RAkXgmT.jpg
 [github]: https://github.com/emillon/discotex
